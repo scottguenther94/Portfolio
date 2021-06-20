@@ -37,7 +37,7 @@ h1 {
 nav {
   display: inline-flex;
   position: relative;
-  top:25%;
+  top:35%;
   font-size: 2.5vw;
   max-width: fit-content;
 }
@@ -202,5 +202,8 @@ div img {
 @media screen and (max-width: 600px) {
   body {
     background-color: var(--dark);
+  }
+  .button_columns {
+    width:100%;
   }
 }
