@@ -25,7 +25,8 @@ header {
    flex-direction:column;
    background-color: var(--darkest);
    color: var(--lightest);
-   height:100px;
+   height:fit-content;
+   width:100%;
 }
 h1 {
   position: relative;
@@ -203,7 +204,18 @@ div img {
   body {
     background-color: var(--dark);
   }
-  .button_columns {
+  .button_columns{
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    top:17px
+  }
+  nav {
+    float:none;
     width:100%;
+    flex-direction: column;
+    top:-11px;
+    left:340px;
   }
 }
