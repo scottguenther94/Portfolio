@@ -8,6 +8,7 @@
 }
 * {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lightest);
 }
 a:link { text-decoration: none; }
 
@@ -21,13 +22,14 @@ header {
    list-style: none;
    display: flex;
    flex-wrap: nowrap;
+   flex-direction:column;
    background-color: var(--darkest);
    color: var(--lightest);
    height:100px;
 }
 h1 {
   position: relative;
-  left:50px;
+  left:20px;
   font-size: 4vw;
   max-width: fit-content;
   top: 25%;
@@ -35,10 +37,9 @@ h1 {
 nav {
   display: inline-flex;
   position: relative;
-  right:0px;
-  top:35%;
+  top:25%;
   font-size: 2.5vw;
-  margin-left: 100px;
+  max-width: fit-content;
 }
 
 li a {
@@ -196,4 +197,10 @@ div img {
   -moz-box-shadow: 1px 1px 2px 0 #CCCCCC;
   -webkit-box-shadow: 1px 1px 2px 0 #CCCCCC;
   border: 1px solid #305875;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: var(--dark);
+  }
 }
