@@ -1,71 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scott Guenther Portfolio</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.css" media="screen,projection" />
+  <link type="text/css" href="./style.css" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: #565D6A;
+      background-image: url("Images/pexels-chait-goli-1823680.jpg");
+      /* Set a specific height */
+      min-height: 500px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-      <h1>Scott Guenther</h1>
-      <nav>
-        <li>
-            <a href=#about>About Me</a>
-        </li>
-        <li>
-          <li >
-            <a href=#work>See My Work</a>
-        </li>
-        <li>
-            <a href=#contact>Contact Me</a>
-        </li>
-      </nav>
-    </header><br>
-    <figure class="center">
-        <img src="./Images/tux.jpg"/>
-        <figcaption class="center">This is a beautiful photo of me.</figcaption>
-    </figure><br>
-    <section>
-        <h3 id="about">About Me</h3>
-        <p id="about_me_p">
-            I was raised in Atlanta, GA where I was emersed in my 
-            father's computer business. From about the age of 14, I would
-            spend my Summers refurbishing computers, troubleshooting software, 
-            and peeling the stickers off boxes using a heatgun. 
-            I completed my Bachelor's of Science in Integrated Studies at 
-            Moody Bible Institute with a focus in communication. Afterward, 
-            I attended Northwestern University's Full Stack Coding Bootcamp
-            to launch my career as a developer. 
-        </p>
-    </section><br>
-    <section class="buttons">
-      <p id="work"><a  href="https://github.com/scottguenther94?tab=repositories" target="_blank" class="button button_top">Interactive Resumé</a></p>
-    <div class="button_columns">
-      <p><a  href="https://github.com/scottguenther94?tab=repositories" target="_blank" class="button button_two button_bottom">Password Generator</a></p>
-      <p><a  href="https://github.com/scottguenther94?tab=repositories" target="_blank" class="button button_three button_bottom">Weather Dashboard</a></p>
-      <p><a  href="https://github.com/scottguenther94?tab=repositories" target="_blank" class="button button_four button_bottom">Employee Management</a></p>
-      <p><a  href="https://github.com/scottguenther94?tab=repositories" target="_blank" class="button button_five button_bottom">Tuxedo</a></p>
+  <nav class="nav-extended navigation-style">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Scott Guenther</a>
     </div>
-    </section><br><br>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#about">About Me</a></li>
+        <li class="tab"><a class="active" href="#experience">Experience</a></li>
+        <li class="tab"><a href="#github">Github</a></li>
+        <li class="tab"><a href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="center">
-      <h3 id="contact">Contact Me:</h3>
-      <div class="contact-container">
-        <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <input type="submit" value="Submit">
+  <div id="about" class="section grey darken-4">
+    <div class="row container">
+      <h2 class="header grey-text lighten-2">About Me</h2>
+      <p class="grey-text darken-4">From musician to full-time coder, I've experienced the ins and outs of the creative process. Inspired by the cities I've lived in, I incorporate a since of clean city-style into every project I work on. </p>
+    </div>
+  </div>
+  <div id="experience" class="col s12">Experience</div>
+  <div id="github" class="col s12">Github</div>
+  <div id="contact" class="col s12">Contact Me</div>
 
-        </form>
-      </div>
-    </section>
-    
+  <script src="./script.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="./materialize/js/materialize.js"></script>
+
+
 </body>
+
 </html>
